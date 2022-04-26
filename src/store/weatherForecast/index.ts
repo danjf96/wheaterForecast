@@ -5,7 +5,7 @@ import api from "../../services/api";
 
 //REDUCERS
 const INITIAL_STATE: STATEWEATHERFORECAST = {
-    loading: false,
+    loading: true,
     base: "test",
     clouds: {all: 0},
     cod: 0,
