@@ -10,7 +10,7 @@ const CurrentTemperature = (props:CURRENTTEMPERATUREPROPS) => {
     return (
         <View style={Styles.container}>
             <View style={Styles.containerTwo}>
-                <Text style={Styles.temp}>{temperature?.toPrecision(2)} °C</Text>
+                <Text style={Styles.temp}>{temperature?.toFixed(1)} °C</Text>
                 <Image source={{ uri: icon }} style={Styles.icon}/>
             </View>
             <Text style={Styles.description}>{description}</Text>
@@ -18,8 +18,8 @@ const CurrentTemperature = (props:CURRENTTEMPERATUREPROPS) => {
             {
                 (temp_min !== undefined && temp_max !== undefined) && 
                     <View style={Styles.containerMinMax}>
-                        <Text>min: {temp_min?.toPrecision(2)} °C</Text>
-                        <Text>max: {temp_max?.toPrecision(2)} °C</Text>
+                        <Text style={Styles.textMinMax}>min: {temp_min?.toFixed(1)} °C</Text>
+                        <Text style={Styles.textMinMax}>max: {temp_max?.toFixed(1)} °C</Text>
                     </View>
             }
 

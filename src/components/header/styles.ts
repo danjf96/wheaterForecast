@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import Colors from "../../assets/Colors";
 
 const Styles = StyleSheet.create({
     constainer: {
@@ -13,12 +14,14 @@ const Styles = StyleSheet.create({
         width: 48,
         height: 48,
         resizeMode:'contain',
-        marginLeft: 15
+        marginLeft: 15,
+        //tintColor: Colors.text
     },
 
     city: {
         textAlign: 'center',
-        fontSize: 20
+        fontSize: 20,
+        color: Colors.text
     }
 })
 

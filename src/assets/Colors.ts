@@ -1,9 +1,9 @@
 export default {
-    principal: 'white',//'#0086ff',
+    principal: '#0086ff',
     secondary: 'white',
 
-    text: 'black',
-    textSecondary: 'white',
+    text: 'white',
+    textSecondary: 'black',
 
     title: 'black',
 

@@ -1,16 +1,21 @@
 import { StyleSheet } from "react-native";
 import Colors from "../../assets/Colors";
-import { width } from "../../assets/GlobalStyles";
+import { height, width } from "../../assets/GlobalStyles";
 
 
 const Styles = StyleSheet.create({
     scroll: {
         flex: 1,
+        backgroundColor: Colors.principal,
+        minHeight: height,
+        width: '100%',
     },
 
     container: {
-        width,
-        paddingHorizontal: 15
+        width: '100%',
+        paddingHorizontal: 15,
+        backgroundColor: 'transparent',
+        marginTop: 30
     },
 
 

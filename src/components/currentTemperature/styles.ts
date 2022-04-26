@@ -25,25 +25,32 @@ const Styles = StyleSheet.create({
 
     temp: {
         fontSize: 60,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: Colors.text
     },
 
     description: {
         fontSize: 25,
         fontWeight: 'bold',
-        textTransform: 'capitalize'
+        textTransform: 'capitalize',
+        color: Colors.text
     },
 
     textWind: {
         fontSize: 20,
         textAlign: 'center',
-        marginTop: 15
+        marginTop: 15,
+        color: Colors.text
     },
 
     icon: { 
         width: 48, 
         height: 48, 
-        marginLeft: 10 
+        marginLeft: 10,
+    },
+
+    textMinMax: {
+        color: Colors.text
     }
 })
 

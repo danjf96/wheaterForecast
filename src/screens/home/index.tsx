@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
-import { ActivityIndicator, SafeAreaView, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { ActivityIndicator, SafeAreaView, View, ScrollView, RefreshControl } from 'react-native'
 import Styles from './styles'
 import { getPositions } from '../../utils/geolocation';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeWheatherForecast, getWheatherForecast } from '../../store/weatherForecast';
-import { ScrollView } from 'react-native-gesture-handler';
 import CurrentTemperature from '../../components/currentTemperature';
 import Header from '../../components/header';
+import Colors from '../../assets/Colors';
 
 const Home = (props:any) => {
     const { location, main, weather, wind, name, sys, loading } = useSelector( ({ weatherForecast }) => weatherForecast )
@@ -26,7 +26,14 @@ const Home = (props:any) => {
     }, [])
 
     return (
-        <ScrollView style={Styles.scroll}>
+        <ScrollView 
+            style={Styles.scroll} 
+            refreshControl={
+                <RefreshControl
+                    refreshing={false}
+                    onRefresh={getLocation}
+                />}
+            >
             <SafeAreaView>
                 {!loading &&
                     <View style={Styles.container}>
@@ -46,7 +53,7 @@ const Home = (props:any) => {
 
                     </View>
                 }
-                {loading && <ActivityIndicator  size={'large'} style={{ marginTop: 20 }} testID='loading'/>}
+                {loading && <ActivityIndicator color={Colors.text}  size={'large'} style={{ marginTop: 20 }} testID='loading'/>}
             </SafeAreaView>
         </ScrollView>
     )
