@@ -11,7 +11,9 @@ const Styles = StyleSheet.create({
     container: {
         width,
         paddingHorizontal: 15
-    }
+    },
+
+
 })
 
 export default Styles
