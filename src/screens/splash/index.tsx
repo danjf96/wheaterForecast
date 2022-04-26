@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, View } from 'react-native'
+import { View } from 'react-native'
 import Styles from './styles'
 import * as Animatable from 'react-native-animatable';
 import { LOGO } from '../../assets/GlobalStyles';
@@ -7,7 +7,7 @@ import { LOGO } from '../../assets/GlobalStyles';
 const Splash = (props:any) => {
 
     const endAnimation = (e:any) => {
-        props.navigation.navigate('Home')
+        e.finished && props.navigation.navigate('Home')
     }
 
     return (
@@ -20,6 +20,7 @@ const Splash = (props:any) => {
                 onAnimationEnd={endAnimation}
                 duration={1200}
                 testID={'animation'}
+                //useNativeDriver={true}
             />
 
         </View>

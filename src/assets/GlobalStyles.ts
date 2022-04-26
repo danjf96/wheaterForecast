@@ -1,7 +1,8 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import Colors from "./Colors";
 
 export const LOGO = require('../assets/images/logo.png')
+export const { height, width, fontScale, scale } = Dimensions.get('window')
 
 export const GlobalStyle = StyleSheet.create({
     line: {

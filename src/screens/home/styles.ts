@@ -1,19 +1,16 @@
 import { StyleSheet } from "react-native";
 import Colors from "../../assets/Colors";
+import { width } from "../../assets/GlobalStyles";
+
 
 const Styles = StyleSheet.create({
-    container: {
-        width: '100%', 
-        height: '100%',
-        backgroundColor: Colors.principal,
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
+    scroll: {
+        flex: 1,
     },
 
-    image: {
-        width: '90%',
-        resizeMode: 'contain'
+    container: {
+        width,
+        paddingHorizontal: 15
     }
 })
 
