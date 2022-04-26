@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "column",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 60,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      10
+       °C
+    </Text>
+    <Image
+      source={
+        Object {
+          "uri": "testIcon",
+        }
+      }
+      style={
+        Object {
+          "height": 48,
+          "marginLeft": 10,
+          "width": 48,
+        }
+      }
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "fontSize": 25,
+        "fontWeight": "bold",
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    testDescription
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "marginTop": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <Text>
+      min: 
+      2.0
+       °C
+    </Text>
+    <Text>
+      max: 
+      11
+       °C
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "fontSize": 20,
+        "marginTop": 15,
+        "textAlign": "center",
+      }
+    }
+  >
+    Ventos: 
+    46.80
+     Km/h
+  </Text>
+</View>
+`;
