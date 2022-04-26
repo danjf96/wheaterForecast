@@ -1,5 +1,5 @@
 export default {
-    principal: '#0086ff',
+    principal: 'white',//'#0086ff',
     secondary: 'white',
 
     text: 'black',

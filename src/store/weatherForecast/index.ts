@@ -6,7 +6,7 @@ import api from "../../services/api";
 //REDUCERS
 const INITIAL_STATE: STATEWEATHERFORECAST = {
     loading: true,
-    base: "test",
+    base: "",
     clouds: {all: 0},
     cod: 0,
     coord: {lon: -122.4064, lat: 37.7858},
@@ -20,8 +20,8 @@ const INITIAL_STATE: STATEWEATHERFORECAST = {
         temp_max: 0,
         temp_min: 0
     },
-    name: "teste",
-    sys: { type: 0, id: 0, country: 'teste', sunrise: 0, sunset: 0},
+    name: "",
+    sys: { type: 0, id: 0, country: '', sunrise: 0, sunset: 0},
     timezone: -25200,
     visibility: 10000,
     weather: [],

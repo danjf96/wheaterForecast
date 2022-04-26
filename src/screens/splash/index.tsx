@@ -16,7 +16,7 @@ const Splash = (props:any) => {
             <Animatable.Image 
                 source={LOGO} 
                 style={Styles.image}
-                animation={'lightSpeedIn'}
+                animation={'bounceIn'}
                 onAnimationEnd={endAnimation}
                 duration={1200}
                 testID={'animation'}

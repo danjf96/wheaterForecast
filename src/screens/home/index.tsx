@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { ActivityIndicator, Image, SafeAreaView, Text, Touchable, TouchableOpacity, View } from 'react-native'
+import { ActivityIndicator, SafeAreaView, View } from 'react-native'
 import Styles from './styles'
 import { getPositions } from '../../utils/geolocation';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,13 +14,10 @@ const Home = (props:any) => {
 
     const getLocation = async () => {
         const positions = await getPositions()
-        console.log('AQUI', positions)
-
         if(positions) dispatch(changeWheatherForecast(positions, 'location'))
     }
 
     useEffect( () => {
-       // console.log('AQUI', location)
         if(location) dispatch(getWheatherForecast(location))
     }, [location])
 
