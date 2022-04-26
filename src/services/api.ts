@@ -4,7 +4,7 @@ import {
 import axios from 'axios'
 
 //DEV
-const baseURL = ''
+const baseURL = 'https://api.openweathermap.org/'
 
 var api = axios.create({
     baseURL,
@@ -16,7 +16,8 @@ var api = axios.create({
 });
 
 api.interceptors.request.use(function (request) {
-    //console.log('REQUEST => ',request)
+    request.url += `&appid=82a0167f1d3e9cb8a1f2634cf723a0a8`
+    console.log('REQUEST => ',request)
     return request;
 }, function (error) {
     //console.log('ERROR => ',error)
@@ -25,7 +26,7 @@ api.interceptors.request.use(function (request) {
 
 api.interceptors.response.use(function (response) {
     let { status, data } = response
-    //console.log('RESPONSE => ',response)
+    console.log('RESPONSE => ',response)
     return response;
 }, function (error) {
     //console.log('ERROR => ',error)

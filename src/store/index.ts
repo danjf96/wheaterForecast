@@ -1,9 +1,9 @@
 
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 import ReduxThunk from 'redux-thunk';
-
+import weatherForecast from '../store/weatherForecast'
 const reducers = {
-
+    weatherForecast
 }
 
 const combinedReducers =  combineReducers(reducers)

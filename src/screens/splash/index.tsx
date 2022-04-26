@@ -7,7 +7,7 @@ import { LOGO } from '../../assets/GlobalStyles';
 const Splash = (props:any) => {
 
     const endAnimation = (e:any) => {
-      
+        props.navigation.navigate('Home')
     }
 
     return (
