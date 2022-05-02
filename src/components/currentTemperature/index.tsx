@@ -25,7 +25,7 @@ const CurrentTemperature = (props:CURRENTTEMPERATUREPROPS) => {
                 <RowItem label='Sensação:' value={`${feels_like?.toFixed(1)} °C`} />
                 <RowItem label='Umidade:' value={`${humidity}%`} />
                 <RowItem label='Pressão:' value={`${pressure} mbar`} />
-                <RowItem label='Vel. do vendo:' value={`${convertMeterInKM(windSpeed)} Km/h`} />
+                <RowItem label='Vel. do vento:' value={`${convertMeterInKM(windSpeed)} Km/h`} />
             </Card>            
 
         </View>

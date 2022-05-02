@@ -21,12 +21,13 @@ exports[`renders correctly 1`] = `
     <Text
       style={
         Object {
+          "color": "white",
           "fontSize": 60,
           "fontWeight": "bold",
         }
       }
     >
-      10
+      10.0
        °C
     </Text>
     <Image
@@ -47,6 +48,7 @@ exports[`renders correctly 1`] = `
   <Text
     style={
       Object {
+        "color": "white",
         "fontSize": 25,
         "fontWeight": "bold",
         "textTransform": "capitalize",
@@ -57,38 +59,274 @@ exports[`renders correctly 1`] = `
   </Text>
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "space-around",
-        "marginTop": 15,
-        "width": "100%",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#00AAFF",
+          "borderColor": "#0086ff",
+          "borderRadius": 15,
+          "borderWidth": 1,
+          "elevation": 1,
+          "marginTop": 25,
+          "paddingHorizontal": 20,
+          "paddingVertical": 15,
+          "width": "100%",
+        },
+        undefined,
+      ]
     }
   >
-    <Text>
-      min: 
-      2.0
-       °C
-    </Text>
-    <Text>
-      max: 
-      11
-       °C
-    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Temp. min:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        2.0 °C
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Temp. max:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        11.0 °C
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Sensação:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        1.0 °C
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Umidade:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        80%
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Pressão:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        5 mbar
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 20,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+              "fontWeight": "600",
+            },
+            undefined,
+          ]
+        }
+      >
+        Vel. do vento:
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            },
+            undefined,
+          ]
+        }
+      >
+        46.80 Km/h
+      </Text>
+    </View>
   </View>
-  <Text
-    style={
-      Object {
-        "fontSize": 20,
-        "marginTop": 15,
-        "textAlign": "center",
-      }
-    }
-  >
-    Ventos: 
-    46.80
-     Km/h
-  </Text>
 </View>
 `;
