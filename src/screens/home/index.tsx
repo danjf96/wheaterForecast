@@ -43,10 +43,8 @@ const Home = (props:any) => {
                         />
 
                         <CurrentTemperature 
-                            temperature={main.temp}
+                            {...main}
                             description={weather[0]?.description}
-                            temp_max={main.temp_max}
-                            temp_min={main.temp_min}
                             icon={`http://openweathermap.org/img/wn/${weather[0]?.icon}.png`}
                             windSpeed={wind.speed}
                         />

@@ -17,10 +17,9 @@ const Styles = StyleSheet.create({
 
     containerMinMax: {
         width: '100%',
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-around',
-        marginTop: 15
+        marginTop: 15,
     },
 
     temp: {
@@ -50,6 +49,10 @@ const Styles = StyleSheet.create({
     },
 
     textMinMax: {
+        color: Colors.text
+    },
+
+    label: {
         color: Colors.text
     }
 })

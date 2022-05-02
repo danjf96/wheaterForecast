@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#00AAFF",
+        "borderColor": "#0086ff",
+        "borderRadius": 15,
+        "borderWidth": 1,
+        "elevation": 1,
+        "marginTop": 25,
+        "paddingHorizontal": 20,
+        "paddingVertical": 15,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+/>
+`;
