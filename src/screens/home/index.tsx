@@ -22,7 +22,7 @@ const Home = (props:any) => {
     }, [location])
 
     useEffect( () => {
-        getLocation()
+        if(!location) getLocation()
     }, [])
 
     return (

@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { View } from 'react-native'
 import Styles from './styles'
 import * as Animatable from 'react-native-animatable';
 import { LOGO } from '../../assets/GlobalStyles';
+import { getPositions } from '../../utils/geolocation';
 
 const Splash = (props:any) => {
 
-    const endAnimation = (e:any) => {
-        e.finished && props.navigation.navigate('Home')
+    const endAnimation = async(e:any) => {
+        if(e.finished) {
+            getPositions()
+            props.navigation.navigate('Home')
+        }
     }
 
     return (
