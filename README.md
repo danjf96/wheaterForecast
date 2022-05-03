@@ -14,6 +14,7 @@
 - [axios](https://github.com/axios/axios) for networking.
 - [momentjs] (https://www.npmjs.com/package/moment) for format date.
 - [@redux/toolkit] (https://redux-toolkit.js.org/introduction/getting-started).
+- [react-native-linear-gradient] (https://github.com/react-native-linear-gradient/react-native-linear-gradient).
 - [react-native-animatable] (https://github.com/oblador/react-native-animatable) for animation.
 - [react-native-testing-library] (https://testing-library.com/docs/react-native-testing-library/intro/) for testing.
 - [react-navigation](https://reactnavigation.org/) navigation library.
