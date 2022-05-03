@@ -1,4 +1,4 @@
-# wheterForecast
+# wheaterForecast
 
 ## Prerequisites
 
