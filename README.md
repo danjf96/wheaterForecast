@@ -101,8 +101,12 @@ For more info please go to https://reactnative.dev/docs/signed-apk-android
 
 For more info please go to https://reactnative.dev/docs/publishing-to-app-store
 
-screenshots
+### SCREENSHOT
 
-IOS:
+<div style="display: flex; flex-direction: row; justify-items: space-between;">
+  <img src="https://user-images.githubusercontent.com/34666361/166400196-f5131c9f-20ab-4a20-9516-8e295da9a47d.png" width="30%" style="object-fit: contain;" />
+  <img src="https://user-images.githubusercontent.com/34666361/166400500-702f14f5-ebab-47e8-b0c3-377947dc93f8.png" width="30%"  resizemode='contain'style="object-fit: contain" />
+    <img src="https://user-images.githubusercontent.com/34666361/166400484-59baceb6-8266-4369-ae3d-c5c7505f596c.png" width="30%"  resizemode='contain'style="object-fit: contain; " />
+</div>
 
-ANDROID:
+
