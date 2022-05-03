@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import { View } from 'react-native'
 import Styles from './styles'
 import * as Animatable from 'react-native-animatable';
 import { LOGO } from '../../assets/GlobalStyles';
 import { getPositions } from '../../utils/geolocation';
+import Container from '../../components/container';
 
 const Splash = (props:any) => {
 
@@ -15,7 +15,7 @@ const Splash = (props:any) => {
     }
 
     return (
-        <View style={Styles.container}>
+        <Container style={Styles.container}>
             
             <Animatable.Image 
                 source={LOGO} 
@@ -27,7 +27,7 @@ const Splash = (props:any) => {
                 //useNativeDriver={true}
             />
 
-        </View>
+        </Container>
     )
 }
 

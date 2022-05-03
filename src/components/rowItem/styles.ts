@@ -2,23 +2,18 @@ import { StyleSheet, StyleSheetProperties, ViewStyle } from "react-native";
 import Colors from "../../assets/Colors";
 
 const Styles = StyleSheet.create({
-    container: {
-        width: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 20
+    container: { 
+        width: '100%', 
+        flexDirection: 'row', 
+        justifyContent:'space-between', 
+        marginVertical: 13, 
+        alignItems: 'center'
     },
 
-    value: {
-        color: Colors.text,
-        fontSize: 18
-    },
-
-    label: {
-        color: Colors.text,
-        fontSize: 18,
-        fontWeight: '600'
+    text: {
+        color: Colors.textSecondary,
+        fontSize: 17,
+        textTransform: 'capitalize'
     }
 })
 

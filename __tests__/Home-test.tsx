@@ -15,26 +15,26 @@
  );
  
  it('renders correctly', async () => {
-   const screen = render(component)
-   expect(screen.toJSON()).toMatchSnapshot()
+   const screen = render( component )
+   await waitFor( () => expect(screen.toJSON()).toMatchSnapshot())
+   
  });
  
  describe('test loading and render items or not', () => {
  
    test('renders correctly loading', async () => {
- 
-     const { getByTestId, getAllByTestId } = render( component )   
-     const weatherForecast = store.getState().weatherForecast
-     expect(weatherForecast.location).toBe(undefined)
-    //  expect(weatherForecast.loading).toBeTruthy()
+   
+     const { getByTestId, getAllByTestId } =  render( component ) 
+     await waitFor( () => {
+      const weatherForecast = store.getState().weatherForecast
+      expect(weatherForecast.location).toBe(undefined)
+     })
  
    });
  
    test('renders correctly location', async () => {
  
-        const { getAllByTestId, getByTestId, getByText, update } = await waitFor(() =>
-            render(component)
-        ); 
+        const { getAllByTestId, getByTestId, getByText, update } = render(component)
 
         await waitFor( () => {
             const initialMain =  {

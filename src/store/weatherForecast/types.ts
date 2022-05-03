@@ -1,7 +1,8 @@
 import Geolocation from 'react-native-geolocation-service'
 export interface STATEWEATHERFORECAST extends CURREMTWEATHER {
     location?: Geolocation.GeoCoordinates,
-    loading: boolean
+    loading: boolean,
+    daily?: DAILYPROPS[]
     
 }
 
@@ -35,6 +36,27 @@ export interface WHETHER {
     icon: string
     id: number
     main: string
+}
+
+export interface DAILYPROPS {
+    clouds: number
+    dew_point: number
+    dt: number
+    feels_like: {day: number, night: number, eve: number, morn: number}
+    humidity: number
+    moon_phase: number
+    moonrise: number
+    moonset: number
+    pop: number
+    pressure: number
+    sunrise: number
+    sunset: number
+    temp: {day: number, min: number, max: number, night: number, eve: number}
+    uvi: number
+    weather: WHETHER[]
+    wind_deg: number
+    wind_gust: number
+    wind_speed: number
 }
 
 export interface WIND { speed: number, deg: number, gust: number}

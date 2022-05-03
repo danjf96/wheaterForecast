@@ -6,14 +6,14 @@ import { height, width } from "../../assets/GlobalStyles";
 const Styles = StyleSheet.create({
     scroll: {
         flex: 1,
-        backgroundColor: Colors.principal,
+        backgroundColor: 'transparent',
         minHeight: height,
         width: '100%',
     },
 
     container: {
         width: '100%',
-        paddingHorizontal: 15,
+        //paddingHorizontal: 15,
         backgroundColor: 'transparent',
         marginTop: 30
     },

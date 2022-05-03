@@ -7,7 +7,7 @@ export const getPositions:any = () => new Promise( async (resolve, reject) => {
         const hasPermission = await hasLocationPermission();
 
         if (!hasPermission) {
-          reject();
+          reject(undefined);
         }
     
         Geolocation.getCurrentPosition(
@@ -16,7 +16,7 @@ export const getPositions:any = () => new Promise( async (resolve, reject) => {
           },
           (error) => {
             Alert.alert(`Code ${error.code}`, error.message);
-            reject()
+            reject(undefined)
           },
           {
             accuracy: {
@@ -30,7 +30,7 @@ export const getPositions:any = () => new Promise( async (resolve, reject) => {
         );
     } catch(e){
         console.log(e)
-        reject()
+        reject(undefined)
     }
 })
 

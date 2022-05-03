@@ -25,11 +25,12 @@ const Styles = StyleSheet.create({
     temp: {
         fontSize: 60,
         fontWeight: 'bold',
-        color: Colors.text
+        color: Colors.text,
+        marginBottom: 15
     },
 
     description: {
-        fontSize: 25,
+        fontSize: 18,
         fontWeight: 'bold',
         textTransform: 'capitalize',
         color: Colors.text
@@ -43,13 +44,17 @@ const Styles = StyleSheet.create({
     },
 
     icon: { 
-        width: 48, 
-        height: 48, 
+        width: 24, 
+        height: 24, 
         marginLeft: 10,
+        borderWidth: 2,
+        marginRight: 10,
     },
 
     textMinMax: {
-        color: Colors.text
+        color: Colors.text,
+        marginRight: 10,
+        fontSize: 15
     },
 
     label: {

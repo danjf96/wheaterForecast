@@ -60,7 +60,18 @@ export const getWheatherForecast = (coords: geolocation.GeoCoordinates) => {
             dispatch({ type: Types.LOAD, loading: false })
        }
     }
+}
 
+export const getMoreWheatherForecast = (coords: geolocation.GeoCoordinates) => {
+    return async (dispatch: (arg0:any) => any) => {
+        // dispatch({ type: Types.LOAD, loading: true })
+       try{
+            const { data }:any = await api.get(`data/2.5/onecall?lat=${coords.latitude}&lon=${coords.longitude}&lang=pt_br&units=metric`)
+            dispatch({ type: Types.CHANGE, payload: { daily: data?.daily, loading: false} })
+       }catch(e){
+            // dispatch({ type: Types.LOAD, loading: false })
+       }
+    }
 }
 
 export default STATE

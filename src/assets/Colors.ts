@@ -3,7 +3,7 @@ export default {
     secondary: 'white',
 
     text: 'white',
-    textSecondary: 'black',
+    textSecondary: '#0086ff',
 
     title: 'black',
 

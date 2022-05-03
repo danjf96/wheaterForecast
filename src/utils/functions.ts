@@ -4,3 +4,5 @@ export const convertMeterInKM = (value: number | undefined) => {
 
     return (value * 3.6).toFixed(2)
 }
+
+export const round = (value: number) => Math.round(value)

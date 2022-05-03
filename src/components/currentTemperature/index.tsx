@@ -1,32 +1,36 @@
 import React, { useEffect } from 'react'
-import { Image, Text, View } from 'react-native'
-import { convertMeterInKM } from '../../utils/functions'
+import { Text, View } from 'react-native'
+import { round } from '../../utils/functions'
 import Card from '../card'
 import RowItem from '../rowItem'
 import Styles from './styles'
 import { CURRENTTEMPERATUREPROPS } from './types'
 
 const CurrentTemperature = (props:CURRENTTEMPERATUREPROPS) => {
-    const { temp, temp_min, temp_max, description, icon, windSpeed, humidity, pressure, feels_like } = props
-
+    const { temp, temp_min, temp_max, description, daily } = props
     return (
         <View style={Styles.container}>
 
             <View style={Styles.containerTwo}>
-                <Text style={Styles.temp}>{temp?.toFixed(1)} °C</Text>
-                <Image source={{ uri: icon }} style={Styles.icon}/>
+                
+                <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                    <Text style={Styles.temp}>{temp?.toPrecision(2)} °C</Text>
+                    <Text style={Styles.description}>{description}</Text>
+                    <View style={{ flexDirection: 'row', marginTop: 15 }}>
+                        <Text style={Styles.textMinMax}>Máx: {round(temp_max)} °C</Text>
+                        <Text style={[Styles.textMinMax, { marginRight: 0 }]}>min: {round(temp_min)} °C</Text>
+                    </View>
+
+                </View>
             </View>
-            <Text style={Styles.description}>{description}</Text>
+            
 
 
-            <Card>
-                <RowItem label='Temp. min:' value={`${temp_min?.toFixed(1)} °C`} />
-                <RowItem label='Temp. max:' value={`${temp_max?.toFixed(1)} °C`} />
-                <RowItem label='Sensação:' value={`${feels_like?.toFixed(1)} °C`} />
-                <RowItem label='Umidade:' value={`${humidity}%`} />
-                <RowItem label='Pressão:' value={`${pressure} mbar`} />
-                <RowItem label='Vel. do vento:' value={`${convertMeterInKM(windSpeed)} Km/h`} />
-            </Card>            
+            {daily && <Card>
+               {daily?.map( (item, index) => (
+                   <RowItem {...item} index={index} key={`item${index}`} />
+               ))}
+            </Card>}            
 
         </View>
     )

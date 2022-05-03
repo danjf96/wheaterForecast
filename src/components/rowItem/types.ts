@@ -1,9 +1,6 @@
 import { TextStyle, ViewStyle } from "react-native";
+import { DAILYPROPS } from "../../store/weatherForecast/types";
 
-export interface ROWITEMPROPS {
-    label: string,
-    value: string,
-    styleLabel?: TextStyle
-    styleValue?: TextStyle,
-    styleContainer?: ViewStyle
+export interface ROWITEMPROPS extends DAILYPROPS {
+    index?: number
 }

@@ -1,7 +1,8 @@
-import { CURRENT } from "../../store/weatherForecast/types";
+import { DAILYPROPS, CURRENT } from "../../store/weatherForecast/types";
 
 export interface CURRENTTEMPERATUREPROPS extends CURRENT {
     description: string,
     icon: string,
-    windSpeed?: number
+    windSpeed?: number,
+    daily?: DAILYPROPS[]
 }
