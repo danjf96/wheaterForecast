@@ -55,7 +55,6 @@ const Home = (props:any) => {
                             <CurrentTemperature 
                                 {...main}
                                 description={weather[0]?.description}
-                                icon={`http://openweathermap.org/img/wn/${weather[0]?.icon}.png`}
                                 windSpeed={wind.speed}
                                 daily={daily}
                             />
